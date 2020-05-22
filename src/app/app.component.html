@@ -1,0 +1,17 @@
+<hello name="{{ name }}"></hello>
+<mat-slider min="1" max="100" step="1" value="1" style="border:1px solid black;"></mat-slider>
+<style>
+  .cardList {
+    display: flex;
+    flex-direction: column;
+  }
+  /* Row Gap */
+  .cardList > *:not(:last-child) {
+    margin-bottom: 32px;
+  }
+</style>
+<div class="cardList">
+   <app-card></app-card>
+   <app-card></app-card>
+   <app-card></app-card>
+</div>
