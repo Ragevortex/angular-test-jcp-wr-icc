@@ -1,5 +1,8 @@
 <hello name="{{ name }}"></hello>
-<mat-slider min="1" max="100" step="1" value="1" style="border:1px solid black;"></mat-slider>
+<mat-slider min="1" max="100" step="1" value="1" style="border:1px solid black;">
+<div class="slide"><img src="sample-cover.png" width="90px" height="auto"/></div>
+
+</mat-slider>
 <style>
   .cardList {
     display: flex;
@@ -11,7 +14,7 @@
   }
 </style>
 <div class="cardList">
-   <app-card></app-card>
+   <app-card><img src="sample-cover.png" /></app-card>
    <app-card></app-card>
    <app-card></app-card>
 </div>
