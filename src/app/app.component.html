@@ -1,20 +1,23 @@
 <hello name="{{ name }}"></hello>
-<mat-slider min="1" max="100" step="1" value="1" style="border:1px solid black;">
-<div class="slide"><img src="sample-cover.png" width="90px" height="auto"/></div>
 
-</mat-slider>
-<style>
-  .cardList {
-    display: flex;
-    flex-direction: column;
-  }
-  /* Row Gap */
-  .cardList > *:not(:last-child) {
-    margin-bottom: 32px;
-  }
-</style>
-<div class="cardList">
-   <app-card><img src="sample-cover.png" /></app-card>
-   <app-card></app-card>
-   <app-card></app-card>
+
+<div class="container"
+     fxLayout
+     fxLayout.xs="column"
+     fxLayoutAlign="center"
+     fxLayoutGap="10px"
+     fxLayoutGap.xs="0">
+  <div class="item item-1" fxFlex="15%">Item 1</div>
+  <div class="item item-2" fxFlex="20%" fxFlexOrder="3">Item 2</div>
+  <div class="item item-3" fxFlex>Item 3</div>
+</div>
+
+<div class="container"
+     fxLayout
+     fxLayout.xs="column"
+     fxLayoutAlign="center"
+     fxLayoutGap="10px"
+     fxLayoutGap.xs="0">
+  <div class="item item-4" fxFlex fxFlexOffset="50px"  fxFlexOffset.xs="0">Item 4</div>
+  <div class="item item-5" fxFlex="200px">Item 5</div>
 </div>
