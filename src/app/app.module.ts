@@ -7,9 +7,11 @@ import { AppComponent } from './app.component';
 import { CardComponent } from './card.component';
 import { HelloComponent } from './hello.component';
 import { MatSliderModule } from '@angular/material/slider';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatProgressSpinnerModule} from '@angular/material';
 import { FlexLayoutModule } from "@angular/flex-layout";
 @NgModule({
-  imports:      [ BrowserModule, BrowserAnimationsModule, FlexLayoutModule, FormsModule, MatSliderModule],
+  imports:      [ BrowserModule, BrowserAnimationsModule, FlexLayoutModule, FormsModule, MatSliderModule, MatToolbarModule, MatProgressSpinnerModule],
   declarations: [ AppComponent, CardComponent, HelloComponent ],
   bootstrap:    [ AppComponent ]
 })
